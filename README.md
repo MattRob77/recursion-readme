@@ -205,7 +205,7 @@ Now, let's try to disentangle how we get to a recursive solution.  We do so not 
 
 2. Then we ask ourselves, *Can we reword the solution with the name of our function?*
 
-  So in this case we say, well 1 + 2 + 3 + 4 + 5 is really sumUpTo(4) + 5.  What does it mean to print out all of the numbers down from 5?  Well it means print out 5, and then print out downFrom(4).  This leads to our recursive call of `downFrom(n - 1)`.  
+  So in this case we say, well 1 + 2 + 3 + 4 + 5 is really sumUpTo(4) + 5.  What does it mean to sum up all of the numbers up to 5?  Well it means add 5 to the result of sumUpTo(4), and then add 4 to the result of sumUpTo(3), and so on.  This leads to our recursive call of `sumUpTo(n - 1)`.  
   
 3. Now the only thing left to do is look for a base case.  This is the case when there is really no more breaking down of the problem, so we can just return the solution for that case.  Here, sumUpTo(1) equals 1.
 
