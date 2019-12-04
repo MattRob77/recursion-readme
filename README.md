@@ -105,7 +105,7 @@ If that's true, then we can rewrite our function sumUpTo(n) as the following:
   }
 
 ```
-However if just keep the function above, we will call this function forever.  Let's stop when n is one.  As you see above, the sum up to the number one is one, so we can just write our function as the following:
+However if we just keep the function above, we will call this function forever.  Let's stop when n is one.  As you see above, the sum up to the number one is one, so we can just write our function as the following:
 
 ```js
 function sumUpTo(n){
@@ -200,7 +200,7 @@ Now, let's try to disentangle how we get to a recursive solution.  We do so not 
 
   ```js
   sumUpTo(5)
-    // 1 + 2 + 3+ 4 + 5
+    // 1 + 2 + 3 + 4 + 5
   ```
 
 2. Then we ask ourselves, *Can we reword the solution with the name of our function?*
