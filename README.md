@@ -110,7 +110,7 @@ However if we just keep the function above, we will call this function forever. 
 ```js
 function sumUpTo(n){
   if(n > 1){
-      sumUpTo(n - 1) + n
+      return sumUpTo(n - 1) + n
   } else {
     return 1
   }
@@ -125,7 +125,7 @@ Let's see what happens if we pass the number five into this function.
 
 function sumUpTo(n){
   if(n > 1){
-      sumUpTo(n - 1) + n
+     return sumUpTo(n - 1) + n
   } else {
     return 1
   }
@@ -158,7 +158,7 @@ So when we write a function like
 ```js
 function sumUpTo(n){
   if(n > 1){
-      sumUpTo(n - 1) + n
+      return sumUpTo(n - 1) + n
   } else {
     return 1
   }
@@ -187,7 +187,7 @@ Ok, so now we understand that when we see a function like sumUpTo we know that t
 ```js
 function sumUpTo(n){
   if(n > 1){
-      sumUpTo(n - 1) + n
+      return sumUpTo(n - 1) + n
   } else {
     return 1
   }
@@ -212,3 +212,5 @@ Now, let's try to disentangle how we get to a recursive solution.  We do so not 
 ### Summary
 
 In this lesson we learned two things: how to find the recursive solution to a problem, and how JavaScript evaluates a recursive solution.  We find the recursive solution by choosing an example, solving the example and then reword our solution by using our function.  For example we said that 1 + 2 + 3 + 4 + 5 can be reworded as the sum up to four plus five.  Then we find our base case, by finding the stopping point or the point where it is trivial to provide a return value.  Second, we also discussed how JavaScript evaluates our recursive solutions.  We said that a recursive solution is evaluated by making multiple recursive calls until the base case is reached.  No recursive call can be evaluated until the base case provides a solution.  Then the other recursive calls can be solved, one by one until we have arrived at our solution.
+
+<p class='util--hide'>View <a href='https://learn.co/lessons/recursion-readme'>Recursion Readme</a> on Learn.co and start learning to code for free.</p>
