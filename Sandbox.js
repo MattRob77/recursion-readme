@@ -9,4 +9,9 @@ function sayDownFrom(n) {
 }
 
 sayDownFrom(5)
-//counts down from 5 
+//counts down from 5
+
+function sumUpToFive() {
+  return (1 + 2 + 3 + 4 + 5)
+}
+//Function that adds up all of the numbers up to five
